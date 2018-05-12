@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/slidecss.css">
+<script type="text/javascript">
+function login()
+{
+if(document.getElementById("name").value == "john" //take input from name filed in login form
+       && document.getElementById("password").value == "1234" ) //take input from name password field in login form and matches with user name and passwrd
+	   {
+	   alert("Login successful"); //if matched then show this message
+	   }
+	   else {
+	   alert("Invalid Username and Password"); //if does not match then show this message
+	   }
+}
+</script>
+<title>Home Page</title>
+</head>
+
+<body ng-app="app">
+<div class="header">
+<div class="headertop"> <!��  The header top where the contact and email details is shown -->
+<a style="float:left; font-style:italic;">Free shipping and returns</a><a>Contact</a> | <a>4255242301</a> | <a style="text-align:center;" href="#">shopfromus_support@seattle.com</a> | <a href="resume.html">Resume</a>
+</div>
+<img src="images/logo.png" style="width:5%; float:left;"/> <!��  the logo in the left corner of header -->
+&nbsp;
+<div class="nav" style="height:47px;"> <!��  The main menu within header -->
+<a href="index.html" class="active">Home Page</a>
+<a href="productlist.html">Product List</a>
+<a href="profile.html">Account</a>
+<a href="contact.html">Contact Us</a>
+</div>
+</div>
+&nbsp;
+<div class="slide">
+<div style="width:60%; float:left" class=""> 
+<img src="images/header_Image1.jpg" style="width:100%; height:30%;"/> <!��  the image at the left side of the login form-->
+</div>
+<div style="width:40%; height:100%; float:right;"> <!��  The float is for positioning the login form at the right side of the image -->
+<h3>Please Login to Get Exiting Offers and Discounts </h3>
+<form id="userLogin" name="userLogin" style="display:block;"> <!��  login form-->
+<label>User Name</label>
+<input id="name" name="username" placeholder="Enter User Name" type="text"><br />
+<label>Password</label>
+<input id="password" name="password" placeholder="**********" type="password"><br />
+<button type="submit" name="submit" value="login" onclick="javascript:login()">Login</button>
+<p>Don't have an account?<a href="register.html">Click here to register</a></p>
+</form>
+<h5>Or Login using</h5>
+<a href="#" style="text-decoration:none;"><img src="images/google+.png" style="border-radius:120px; width:15%;" /></a>  
+<a href="#" style="text-decoration:none; font-size:40px"><img src="images/facebook.jpg" style="border-radius:11px;width:15%;" /></a>
+</div>	
+</div>
+&nbsp;
+<div style="text-align:center">
+<img src="images/d1.png" width="20%">
+<a style="text-align:center; color:#999202; font-size:24px">Buy the best quality Fabric</a> <!��  a normal promotional message -->
+<img src="images/d1.png" width="20%" class="flip"> <!��  Flipping an image see .flip class in css file -->
+</div>
+<div style="text-align:center"> <!��  Aligning all the products in the middle of the page -->
+<div class="productlist"> <!��  for showing an individual product and other related details -->
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product1.jpg" />
+<h3>Ben Sherman</h3>
+<p>Camden Slim-Fit Trousers</p>
+<p>$199.95</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="productlist">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product2.jpg"/>
+<h3>Politix</h3>
+<p>Zacarias</p>
+<p>$329.00</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="productlist">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product3.jpg"/>
+<h3>Burton Menswear</h3>
+<p>Skinny Window Check Suit Jacket</p>
+<p>$139.95</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="productlist">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product4.jpg"/>
+<h3>Ben Sherman</h3>
+<p>Camden Slim-Fit Suit Jacket</p>
+<p>$399.95</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="productlist">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product5.jpg"/>
+<h3>Kelly Country</h3>
+<p>Livorno 1 Button Slim Fit Dinner Suit</p>
+<p>$249.00</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="productlist">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product6.jpg"/>
+<h3>Kelly Country</h3>
+<p>Livorno Slim Fit Charcoal Suit</p>
+<p>$299.00</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="productlist">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product7.jpg"/>
+<h3>Double Oak Mills</h3>
+<p>Mayfair Trousers</p>
+<p>$59.95</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="productlist">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product8.jpg"/>
+<h3>Topman</h3>
+<p>Check Muscle Fit Suit Jacket</p>
+<p>$109.95</p>
+</a>
+</li>
+</ul>
+</div>
+</div>
+&nbsp;
+<div class="footer"> <!��  Teh footer of the webiste -->
+<h3>Shop from Use</h3>
+<a href="#">About us</a> |
+<a href="#">Affiliates</a> |
+<a href="#">Press</a> |
+<a href="#">Careers</a>
+<div>
+<label>Subscibe for newsletter</label>
+<input id="email" name="email" placeholder="Type in your email address" type="text"><br />
+</div></div>
+</body>
+</html>
