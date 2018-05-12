@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="style/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+        $("#All").click(function () { //show all the dresses is Show all is clicked
+		$("#Su").css("color", "#999202");
+		$("#Tr").css("color", "#999202");
+		$("#Ja").css("color", "#999202");
+								 $("#All").css("color", "Black");	
+								 $("#product1").show();
+								 $("#product7").show();
+								 $("#product2").show();
+								 $("#product3").show();
+								 $("#product4").show();
+								 $("#product5").show();
+								 $("#product6").show();
+								 $("#product8").show();
+								 });
+		});
+$(document).ready(function () {
+        $("#Tr").click(function () { //show only the trousers
+		$("#Su").css("color", "#999202");
+		$("#All").css("color", "#999202");
+		$("#Ja").css("color", "#999202");
+		$("#Tr").css("color", "Black");
+								 $("#product1").show();
+								 $("#product7").show();
+								 $("#product2").hide();
+								 $("#product3").hide();
+								 $("#product4").hide();
+								 $("#product5").hide();
+								 $("#product6").hide();
+								 $("#product8").hide();
+								 });
+		});
+$(document).ready(function () {
+        $("#Su").click(function () { //show only the suits
+		$("#Su").css("color", "Black");
+		$("#All").css("color", "#999202");
+		$("#Tr").css("color", "#999202");
+		$("#Ja").css("color", "#999202");
+								 $("#product1").hide();
+								 $("#product7").hide();
+								 $("#product2").show();
+								 $("#product3").hide();
+								 $("#product4").hide();
+								 $("#product5").show();
+								 $("#product6").show();
+								 $("#product8").hide();
+								 });
+		});
+		$(document).ready(function () {
+        $("#Ja").click(function () { //show only the jackets
+		$("#Su").css("color", "#999202");
+		$("#All").css("color", "#999202");
+		$("#Tr").css("color", "#999202");
+		$("#Ja").css("color", "Black");
+								 $("#product1").hide();
+								 $("#product7").hide();
+								 $("#product2").hide();
+								 $("#product3").show();
+								 $("#product4").show();
+								 $("#product5").hide();
+								 $("#product6").hide();
+								 $("#product8").show();
+								 });
+		});
+</script>
+<title>List of Products</title>
+</head>
+
+<body>
+<div class="header">
+<div class="headertop">
+<a style="float:left; font-style:italic;">Free shipping and returns</a><a>Contact</a> | <a>4255242301</a> | <a style="text-align:center;" href="#">shopfromus_support@Seattle.com</a>
+</div>
+<img src="images/logo.png" style="width:5%; float:left;"/>
+&nbsp;
+<div class="nav" style="height:47px;">
+<a href="index.html">Home Page</a>
+<a href="productlist.html" class="active">Product List</a>
+<a href="profile.html">Account</a>
+<a href="contact.html">Contact Us</a>
+</div>
+</div>
+&nbsp;
+<div style="text-align:center; font-size:24px">
+<a href="#" style="text-decoration:none; color:#999202; padding: 14px 16px;" id="All">Show All</a><a href="#" style="text-decoration:none; color:#999202; padding: 14px 16px;" id="Tr">Trousers</a><a href="#" style="text-decoration:none; color:#999202; padding: 14px 16px;" id="Su">Suit</a><a href="#" style="text-decoration:none; color:#999202; padding: 14px 16px;" id="Ja">Jacket</a>
+</div>
+&nbsp;
+<div style="text-align:center">
+<div class="productlist" id="product1">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product1.jpg"/>
+<h3>Ben Sherman</h3>
+<p>Camden Slim-Fit Trousers</p>
+<p>$199.95</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="productlist" id="product2">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product2.jpg"/> <!-- Image of the product -->
+<h3>Politix</h3>
+<p>Zacarias</p>
+<p>$329.00</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="productlist" id="product3">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product3.jpg"/>
+<h3>Burton Menswear</h3>
+<p>Skinny Window Check Suit Jacket</p>
+<p>$139.95</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="productlist"  id="product4">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product4.jpg"/>
+<h3>Ben Sherman</h3>
+<p>Camden Slim-Fit Suit Jacket</p>
+<p>$399.95</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="productlist" id="product5">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product5.jpg"/>
+<h3>Kelly Country</h3>
+<p>Livorno 1 Button Slim Fit Dinner Suit</p>
+<p>$249.00</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="productlist" id="product6">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product6.jpg"/>
+<h3>Kelly Country</h3>
+<p>Livorno Slim Fit Charcoal Suit</p>
+<p>$299.00</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="productlist" id="product7">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product7.jpg"/>
+<h3>Double Oak Mills</h3>
+<p>Mayfair Trousers</p>
+<p>$59.95</p>
+</a>
+</li>
+</ul>
+</div>
+<div class="productlist" id="product8">
+<ul>
+<li>
+<a href="product.html">
+<img src="images/product8.jpg"/>
+<h3>Topman</h3>
+<p>Check Muscle Fit Suit Jacket</p>
+<p>$109.95</p>
+</a>
+</li>
+</ul>
+</div>
+</div>
+&nbsp;
+<div class="footer">
+<h3>Shop from Use</h3>
+<a href="#">About us</a> |
+<a href="#">Affiliates</a> |
+<a href="#">Press</a> |
+<a href="#">Careers</a>
+<div>
+<label>Subscibe for newsletter</label>
+<input id="email" name="email" placeholder="Type in your email address" type="text"><br />
+</div></div>
+</body>
+</html>
