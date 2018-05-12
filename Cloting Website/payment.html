@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style/style.css">
+<script type="text/javascript">
+function payment()
+{
+var cardnum = document.getElementById("cnum").value;
+var cvvlength = document.getElementById("cvv").value;
+var edate = document.getElementById("expdate").value;
+if(cardnum.length == 16 //take input from card number filed in payment form
+       && cvvlength.length == 3 && edate != "") //take input from CVV field in payment form and check length
+	   {
+	   alert("Payment Successful");
+	   return true;
+	   }
+	   else {
+	   alert("Invalid data"); //if does not match then show this message
+	   return false; 
+	   }
+}
+</script>
+<title>Home Page</title>
+</head>
+
+<body>
+<div class="header">
+<div class="headertop">
+<a style="float:left; font-style:italic;">Free shipping and returns</a><a>Contact</a> | <a>4255242301</a> | <a style="text-align:center;" href="#">shopfromus_support@Seattle.com</a>
+</div>
+<img src="images/logo.png" style="width:5%; float:left;"/>
+&nbsp;
+<div class="nav" style="height:47px;">
+<a href="index.html">Home Page</a>
+<a href="productlist.html">Product List</a>
+<a href="profile.html">Account</a>
+<a href="contact.html">Contact Us</a>
+</div>
+</div>
+&nbsp;
+<form id="makepayment" name="makepayment" style="display:block; text-align:center" > <!��  paymentform-->
+<label>Card Number</label>
+<input id="cnum" name="cnum" placeholder="Enter 16 digit card number" type="text"><br />
+<label>CVV</label>
+<input id="cvv" name="cvv" placeholder="Enter 3 digit cvv number" type="text"><br />
+<label>Expiry Date</label>
+<input id="expdate" name="expdate" type="date"><br />
+<p style="text-align:center">
+<button type="submit" name="submit" value="pay" onclick="javascript:return payment()">Pay</button></p>
+</form>
+<div class="footer" style="">
+<h3>Shop from Use</h3>
+<a href="#">About us</a> |
+<a href="#">Affiliates</a> |
+<a href="#">Press</a> |
+<a href="#">Careers</a>
+<div>
+<label>Subscibe for newsletter</label>
+<input id="email" name="email" placeholder="Type in your email address" type="text"><br />
+</div></div>
+</body>
+</html>
